@@ -10,8 +10,8 @@ while(True) :
         phrase = line.partition(":")
         values[phrase[0].strip()] = phrase[2].strip()
 
-    print("fetching...")
-    os.system("git fetch")
+    os.system("git stash")
+    os.system("git pull")
     print("sleeping... \npress ctrl+c to wake me up")
     try :
         time.sleep(5)
