@@ -14,8 +14,8 @@ while(True) :
     os.system("git pull")
     print("sleeping... \npress ctrl+c to wake me up")
     try :
-        time.sleep(5)
-        # time.sleep(values["refresh_time_minutes"] * 60)
+
+        time.sleep(values["refresh_time_minutes"] as int * 60)
     except KeyboardInterrupt: 
         continue
     
