@@ -12,13 +12,9 @@ while(True) :
         values[phrase[0].strip()] = phrase[2].strip()
 
     os.system("git pull")
-    cur_files = set(next(os.walk('..'))[2])
-
-    if files != cur_files:
-        os.system("git add .")
-        os.system(f"git commit --allow-empty-message")
-        os.system("git push")
-        files = cur_files
+    os.system("git add .")
+    os.system(f"git commit -a --allow-empty-message -m ''")
+    os.system("git push")    
     print("sleeping... \npress ctrl+c to wake me up")
     try :
         # time.sleep(5)
