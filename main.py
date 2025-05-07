@@ -1,13 +1,13 @@
 import os
 import time
 
-with open("config.yaml", "r") as f : 
+with open("config.yaml", "r") as f :
     lines = f.read().split("\n")
 
 files = set(next(os.walk('..'))[2])
-while(True) :
+while True :
     values = dict()
-    for line in lines : 
+    for line in lines :
         phrase = line.partition(":")
         values[phrase[0].strip()] = phrase[2].strip()
 
@@ -19,5 +19,5 @@ while(True) :
     try :
         # time.sleep(5)
         time.sleep(int(values["refresh_time_minutes"]) * 60)
-    except KeyboardInterrupt: 
+    except KeyboardInterrupt:
         continue
