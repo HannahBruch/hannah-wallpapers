@@ -1,7 +1,5 @@
 All of my wallpapers, hosted on github. 
-You can add puller.bat or puller.sh as a scheduled task to automatically pull from the repo as often as you'd like. I update the repo with new wallpapers sporadically. I haven't tested these but they are literally 1 line of code (it just git pulls the repo).
-Currently the python script doesn't work. (It's meant to automatically upload new wallpapers to github and automatically 
-pull from the github repo, synchronizing wallpapers across all devices). 
+You can add puller.bat or puller.sh as a scheduled task to automatically pull from the repo as often as you'd like. The repo is sporadically updated with new wallpapers 
 
 # Credit
 Most are from 4chan's /wg/ and /w/ boards (mostly /wg/), where crediting for photos isn't enforced or part of the culture at all.
